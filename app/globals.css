@@ -134,7 +134,7 @@
   }
 
   ul {
-    @apply list-disc list-inside;
+    @apply m-0 list-none p-0;
   }
   html {
     @apply font-sans;
@@ -172,12 +172,12 @@
     }
 
     ul {
-      @apply flex flex-row items-center gap-6;
+      @apply flex flex-row items-center gap-6 list-none;
     }
   }
 
   .events {
-    @apply grid md:grid-cols-3 gap-10 sm:grid-cols-2 grid-cols-1;
+    @apply grid list-none md:grid-cols-3 gap-10 sm:grid-cols-2 grid-cols-1;
   }
 
   #event-card {
@@ -223,6 +223,8 @@
           @apply flex flex-col gap-2;
 
           ul {
+            @apply list-disc list-inside;
+
             li {
               @apply text-light-100 text-lg max-sm:text-sm;
             }
